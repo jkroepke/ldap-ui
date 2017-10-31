@@ -1,0 +1,33 @@
+version: '2'
+services:
+  web:
+    image: webdevops/php-apache-dev:ubuntu-16.04
+    depends_on:
+      - db
+    volumes:
+      - ./src:/app
+    environment:
+      DB_HOST: database
+      DB_USER: ldap
+      DB_PASSWORD: ldap
+      DB_NAME: ldap
+    ports:
+      - 8080:80
+    networks:
+      - ldap
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ldap
+      MYSQL_USER: ldap
+      MYSQL_PASSWORD: ldap
+    ports:
+      - 3306:3306
+    networks:
+      ldap:
+        aliases:
+          - database
+
+networks:
+  ldap: {}
