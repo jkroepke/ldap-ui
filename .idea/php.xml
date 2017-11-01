@@ -3,7 +3,6 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/src/vendor/sensio/distribution-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/sensio/generator-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -17,7 +16,6 @@
       <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/src/vendor/incenteev/composer-parameter-handler" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/cache" />
-      <path value="$PROJECT_DIR$/src/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/symfony" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php70" />
@@ -43,20 +41,15 @@
       <path value="$PROJECT_DIR$/src/vendor/jms/parser-lib" />
       <path value="$PROJECT_DIR$/src/vendor/nelmio/cors-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/nelmio/api-doc-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/src/vendor/michelf/php-markdown" />
       <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/src/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/negotiation" />
-      <path value="$PROJECT_DIR$/src/vendor/willdurand/faker-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/phpcollection/phpcollection" />
-      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/src/vendor/ldaptools/ldaptools" />
       <path value="$PROJECT_DIR$/src/vendor/chadsikorra/php-simple-enum" />
       <path value="$PROJECT_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/sg/datatablesbundle" />
       <path value="$PROJECT_DIR$/src/vendor/vakata/jstree" />
       <path value="$PROJECT_DIR$/src/vendor/components/jquery" />
@@ -71,6 +64,8 @@
       <path value="$PROJECT_DIR$/src/vendor/leafo/scssphp" />
       <path value="$PROJECT_DIR$/src/vendor/nelmio/security-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/ua-parser/uap-php" />
+      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

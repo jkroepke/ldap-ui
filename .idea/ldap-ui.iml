@@ -17,12 +17,10 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
@@ -54,7 +52,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -64,14 +61,12 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php56" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php70" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-util" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/swiftmailer-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/symfony" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/tedivm/stash" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/twbs/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/faker-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
     </content>
@@ -92,12 +87,10 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/src/vendor/egulias/email-validator" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
           <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
-          <root url="file://$MODULE_DIR$/src/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
@@ -129,7 +122,6 @@
           <root url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
           <root url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
-          <root url="file://$MODULE_DIR$/src/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -139,14 +131,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php56" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php70" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-util" />
-          <root url="file://$MODULE_DIR$/src/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/symfony" />
           <root url="file://$MODULE_DIR$/src/vendor/tedivm/stash" />
           <root url="file://$MODULE_DIR$/src/vendor/twbs/bootstrap" />
           <root url="file://$MODULE_DIR$/src/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-          <root url="file://$MODULE_DIR$/src/vendor/willdurand/faker-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
         </CLASSES>
@@ -164,12 +154,10 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/src/vendor/egulias/email-validator" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
           <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
-          <root url="file://$MODULE_DIR$/src/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
@@ -201,7 +189,6 @@
           <root url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
           <root url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
-          <root url="file://$MODULE_DIR$/src/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -211,14 +198,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php56" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php70" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-util" />
-          <root url="file://$MODULE_DIR$/src/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/symfony" />
           <root url="file://$MODULE_DIR$/src/vendor/tedivm/stash" />
           <root url="file://$MODULE_DIR$/src/vendor/twbs/bootstrap" />
           <root url="file://$MODULE_DIR$/src/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-          <root url="file://$MODULE_DIR$/src/vendor/willdurand/faker-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
         </SOURCES>
