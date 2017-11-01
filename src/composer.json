@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0.22",
         "components/jquery": "^3.2",
         "fortawesome/font-awesome": "^4.7",
         "friendsofsymfony/rest-bundle": "^2.2.0",
