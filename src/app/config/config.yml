@@ -119,7 +119,7 @@ assetic:
             output: vendor/select2/js/select2.js
         select2_js_l18n:
             inputs:
-                - "%kernel.root_dir%/../vendor/select2/select2/dist/js/l18n/%env(LDAPUI_LOCALE)%.js"
+                - "%kernel.root_dir%/../vendor/select2/select2/dist/js/i18n/%env(LDAPUI_LOCALE)%.js"
             output: vendor/select2/js/select2-l18n.js
         select2_css:
             inputs:
@@ -132,7 +132,7 @@ assetic:
             output: vendor/jstree/js/jstree.js
         jstree_css:
             inputs:
-                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/style.css"
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/themes/default/style.css"
             output: vendor/jstree/css/style.css
 
         bootstrap_js:
@@ -143,26 +143,6 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css"
             output: vendor/bootstrap/css/bootstrap.css
-        bootstrap_fonts_woff2:
-            inputs:
-                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.woff2"
-            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
-        bootstrap_fonts_woff:
-            inputs:
-                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.woff"
-            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
-        bootstrap_fonts_ttf:
-            inputs:
-                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.ttf"
-            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
-        bootstrap_fonts_svg:
-            inputs:
-                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.svg"
-            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
-        bootstrap_fonts_eot:
-            inputs:
-                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.eot"
-            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
 
         fontawesome_fonts_woff2:
             inputs:

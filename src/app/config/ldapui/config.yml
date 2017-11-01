@@ -1,6 +1,15 @@
 ldap_tools:
     domains:
-        example:
+        test:
+            domain_name: 'ldapui.com'
+            bind_format: "cn=%%username%%,dc=ldapui,dc=com"
+            base_dn: 'dc=ldapui,dc=com'
+            servers: [ 'ldap' ]
+
+
+
+
+        # example:
             # The FQDN of the domain
             # domain_name: 'example.com'
 

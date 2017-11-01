@@ -2,32 +2,28 @@ version: '2'
 services:
   web:
     image: webdevops/php-apache-dev:ubuntu-16.04
-    depends_on:
-      - db
-    volumes:
-      - ./src:/app
     environment:
-      DB_HOST: database
-      DB_USER: ldap
-      DB_PASSWORD: ldap
-      DB_NAME: ldap
+      WEB_DOCUMENT_ROOT: /app/web/
+      WEB_DOCUMENT_INDEX: app_dev.php
+      LDAPUI_APP_SECRET: TestDevSecret
+      LDAPUI_CORS_ORIGIN: localhost
+    depends_on:
+      - ldap
+    volumes:
+      - ./src:/app:cached
     ports:
       - 8080:80
     networks:
       - ldap
-  db:
-    image: mariadb
+  ldap:
+    image: osixia/openldap
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ldap
-      MYSQL_USER: ldap
-      MYSQL_PASSWORD: ldap
+      LDAP_ORGANISATION: LdapUi
+      LDAP_ADMIN_PASSWORD: password
+      LDAP_DOMAIN: ldapui.com
     ports:
-      - 3306:3306
+      - 389:389
     networks:
-      ldap:
-        aliases:
-          - database
-
+      - ldap
 networks:
   ldap: {}
