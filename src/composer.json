@@ -22,6 +22,7 @@
         "friendsofsymfony/rest-bundle": "^2.2.0",
         "incenteev/composer-parameter-handler": "^2.0",
         "jms/serializer-bundle": "^2.2.0",
+        "knplabs/knp-menu-bundle": "^2.1",
         "ldaptools/ldaptools-bundle": "^0.8.1",
         "leafo/scssphp": "^0.7.1",
         "nelmio/api-doc-bundle": "^2.11",

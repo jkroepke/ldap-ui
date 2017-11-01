@@ -66,6 +66,8 @@
       <path value="$PROJECT_DIR$/src/vendor/ua-parser/uap-php" />
       <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/knplabs/knp-menu-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/knplabs/knp-menu" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

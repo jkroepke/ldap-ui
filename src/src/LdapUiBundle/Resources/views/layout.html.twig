@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% block head %}{% endblock %}
     <title>{% block title %}Test Application{% endblock %}</title>
-    <meta name="description" content="">
+    <meta name="description" content="LdapUi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% image '@LdapUiBundle/Resources/public/favicons/apple-touch-icon.png' %}
@@ -28,39 +28,43 @@
     {% endimage %}
     <meta name="theme-color" content="#ffffff">
 
-    <!-- CSS -->
-    {% stylesheets filter="cssrewrite" output="css/app.css"
-    'css/bootstrap.css'
+    {% block stylesheets %}
+    {% stylesheets filter="?scssphp,cssrewrite" output="css/vendor.css"
+    'vendor/select2/css/select2.css'
+    'vendor/jstree/css/style.css'
+    'vendor/bootstrap/css/bootstrap.css'
+    %}
+    {% stylesheets filter="?scssphp,cssrewrite" output="css/app.css"
     'bundles/luftgebuff/css/main.css'
-    'bundles/luftgebuff/css/custom.css'
-    'bundles/luftgebuff/css/responsive.css'
-    'bundles/luftgebuff/css/animate.css'
     %}
     <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
     {% endstylesheets %}
-    {% block stylesheets %}{% endblock %}
+    {% endblock %}
 
-
-    {% javascripts filter="?jsqueeze" output="js/bootstrap.min.js"
-    'js/jquery.js'
-    'js/bootstrap.js'
+    {% block javascripts %}
+    {% javascripts filter="?jsqueeze" output="js/vendor.min.js"
+    'vendor/jquery/js/jquery.js'
+    'vendor/bootstrap/js/bootstrap.js'
+    'vendor/select2/js/select2.js'
+    'vendor/select2/js/select2-l18n.js'
+    'vendor/jstree/js/jstree.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
-    {% block javascripts %}{% endblock %}
     {% javascripts filter="?jsqueeze" output="js/app.min.js"
-    '@LdapUiBundle/Resources/public/js/common.js'
+    '@LdapUiBundle/Resources/public/js/main.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
+    {% endblock %}
 </head>
 <body>
 
 {% include 'LdapUiBundle:Menu:topnav.html.twig' %}
 
-<div class="container">
+<main role="main" class="container">
     {% block body %}{% endblock %}
-</div>
+</main>
 
 </body>
 </html>

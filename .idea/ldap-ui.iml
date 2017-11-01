@@ -26,6 +26,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
@@ -96,6 +98,8 @@
           <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
+          <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
+          <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools" />
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
@@ -163,6 +167,8 @@
           <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
           <root url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
+          <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
+          <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools" />
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
