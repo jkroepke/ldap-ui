@@ -1,18 +1,23 @@
 <?php
 
+/**
+ * LdapUi
+ *
+ * @category   DependencyInjection
+ * @package    LdapUi
+ * @author     Jan-Otto Kröpke
+ * @copyright  2017 Jan-Otto Kröpke
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ */
+
 namespace LdapUiBundle;
 
-use LdapUiBundle\DependencyInjection\Compiler\ParametersCompilerPass;
-use Symfony\Component\DependencyInjection\Compiler\PassConfig;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class LdapUiBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
+    public function getParent()
     {
-        parent::build($container);
-
-        $container->addCompilerPass(new ParametersCompilerPass(), PassConfig::TYPE_AFTER_REMOVING);
+        return 'LdapToolsBundle';
     }
 }

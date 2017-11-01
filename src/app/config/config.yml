@@ -2,16 +2,19 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: ldapui/config.yml }
+
+parameters:
+    api_name: 'LDAPUi'
+    api_description: 'The full description of the LDAPUi API'
+    env(LDAPUI_LOCALE): en
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
-parameters:
-    locale: en
-
 framework:
     #esi: ~
-    #translator: { fallbacks: ['%locale%'] }
-    secret: '%secret%'
+    translator: { fallbacks: ['en'] }
+    secret: '%env(LDAPUI_APP_SECRET)%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'
         strict_requirements: ~
@@ -21,7 +24,7 @@ framework:
     #serializer: { enable_annotations: true }
     templating:
         engines: ['twig']
-    default_locale: '%locale%'
+    default_locale: '%env(LDAPUI_LOCALE)%'
     trusted_hosts: ~
     session:
         # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id
@@ -38,28 +41,6 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
 
-# Doctrine Configuration
-doctrine:
-    dbal:
-        driver: pdo_mysql
-        host: '%database_host%'
-        port: '%database_port%'
-        dbname: '%database_name%'
-        user: '%database_user%'
-        password: '%database_password%'
-        charset: UTF8
-        # if using pdo_sqlite as your database driver:
-        #   1. add the path in parameters.yml
-        #     e.g. database_path: '%kernel.project_dir%/var/data/data.sqlite'
-        #   2. Uncomment database_path in parameters.yml.dist
-        #   3. Uncomment next line:
-        #path: '%database_path%'
-
-    orm:
-        auto_generate_proxy_classes: '%kernel.debug%'
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
-
 # Swiftmailer Configuration
 swiftmailer:
     transport: '%mailer_transport%'
@@ -71,7 +52,7 @@ swiftmailer:
 # Nelmio CORS
 nelmio_cors:
     defaults:
-        allow_origin:  ["%cors_allow_origin%"]
+        allow_origin:  ["%env(LDAPUI_CORS_ORIGIN)%"]
         allow_methods: ["POST", "PUT", "GET", "DELETE", "OPTIONS"]
         allow_headers: ["content-type", "authorization"]
         max_age:       3600
@@ -81,45 +62,133 @@ nelmio_cors:
 # Nelmio API Doc
 nelmio_api_doc:
     sandbox:
-        accept_type:        "application/json"
+        accept_type: "application/json"
         body_format:
-            formats:        [ "json" ]
+            formats: [ "json" ]
             default_format: "json"
         request_format:
             formats:
-                json:       "application/json"
+                json: "application/json"
 
+ldap_tools:
+    general:
+        cache_type: 'stash'
+    security:
+        default_role: ROLE_USER
+        refresh_user_attributes: true
+        refresh_user_roles: true
 
-# FOS REST Bundle
-fos_rest:
-    body_listener: true
-    param_fetcher_listener: true
-    view:
-#        view_response_listener: 'force'
-        formats:
-            jsonp: true
-            json: true
-            xml: false
-            rss: false
-        mime_types:
-            json: ['application/json', 'application/x-json']
-            jpg: ['image/jpeg']
-            png: ['image/png']
-        jsonp_handler: ~
-        templating_formats:
-            html: true
-        force_redirects:
-            html: true
-        failed_validation: HTTP_BAD_REQUEST
-        default_engine: twig
-    routing_loader:
-        default_format:  json
-        include_format:  false
-    format_listener:
-        rules:
-            - { path: ^/, priorities: [ json, jsonp ], fallback_format: ~, prefer_extension: true }
-    exception:
+nelmio_security:
+    signed_cookie:
+        names: ['*']
+    clickjacking:
+        paths:
+            '^/.*': DENY
+    csp:
+        hosts: []
+        content_types: []
+        enforce:
+            level1_fallback: false
+            browser_adaptive:
+                enabled: false
+            report-uri: %router.request_context.base_url%/nelmio/csp/report
+            default-src:
+                - 'none'
+            script-src:
+                - 'self'
+    content_type:
+        nosniff: true
+    xss_protection:
         enabled: true
+        mode_block: true
+    referrer_policy:
+        enabled: true
+        policies:
+            - 'no-referrer'
+            - 'strict-origin-when-cross-origin'
 
-sensio_framework_extra:
-    view: { annotations: true }
+assetic:
+    debug: '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+        jsqueeze: ~
+        scssphp:
+            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+    assets:
+        jquery:
+            inputs:
+                - "%kernel.root_dir%/../vendor/components/jquery/jquery.js"
+            output: vendor/jquery/js/jquery.js
+
+        select2_js:
+            inputs:
+                - "%kernel.root_dir%/../vendor/select2/select2/dist/js/select2.full.js"
+            output: vendor/select2/js/select2.js
+        select2_js_l18n:
+            inputs:
+                - "%kernel.root_dir%/../vendor/select2/select2/dist/js/l18n/%env(LDAPUI_LOCALE)%.js"
+            output: vendor/select2/js/select2-l18n.js
+        select2_css:
+            inputs:
+                - "%kernel.root_dir%/../vendor/select2/select2/dist/css/select2.css"
+            output: vendor/select2/css/select2.css
+
+        jstree_js:
+            inputs:
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/jstree.js"
+            output: vendor/jstree/js/jstree.js
+        jstree_css:
+            inputs:
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/style.css"
+            output: vendor/jstree/css/style.css
+
+        bootstrap_js:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"
+            output: vendor/bootstrap/js/bootstrap.js
+        bootstrap_css:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css"
+            output: vendor/bootstrap/css/bootstrap.css
+        bootstrap_fonts_woff2:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.woff2"
+            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+        bootstrap_fonts_woff:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.woff"
+            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+        bootstrap_fonts_ttf:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.ttf"
+            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+        bootstrap_fonts_svg:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.svg"
+            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+        bootstrap_fonts_eot:
+            inputs:
+                - "%kernel.root_dir%/../vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.eot"
+            output: vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+
+        fontawesome_fonts_woff2:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff2"
+            output: vendor/fontawesome/fonts/fontawesome-webfont.woff2
+        fontawesome_fonts_woff:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff"
+            output: vendor/fontawesome/fonts/fontawesome-webfont.woff
+        fontawesome_fonts_ttf:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.ttf"
+            output: vendor/fontawesome/fonts/fontawesome-webfont.ttf
+        fontawesome_fonts_svg:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.svg"
+            output: vendor/fontawesome/fonts/fontawesome-webfont.svg
+        fontawesome_fonts_eot:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.eot"
+            output: vendor/fontawesome/fonts/fontawesome-webfont.eot

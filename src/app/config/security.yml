@@ -1,32 +1,39 @@
-# To get started with security, check out the documentation:
-# https://symfony.com/doc/current/security.html
 security:
+    hide_user_not_found: false
 
-    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    encoders:
+        # This is the default user class returned from the LDAP provider below
+        LdapTools\Bundle\LdapToolsBundle\Security\User\LdapUser: plaintext
+
     providers:
-        in_memory:
-            memory: ~
+        ldap:
+            id: ldap_tools.security.user.ldap_user_provider
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        api_docs:
-            pattern: ^/doc
-            anonymous: true
 
         main:
             anonymous: ~
-            # activate different ways to authenticate
-
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
-
-            # https://symfony.com/doc/current/security/form_login_setup.html
-            #form_login: ~
+            # Use the default LDAP user provider defined above
+            provider: ldap
+            pattern: ^/
+            logout: ~
+            guard:
+                authenticators:
+                    - ldap_tools.security.ldap_guard_authenticator
+        login:
+            pattern: ^/login$
+            anonymous: ~
 
     access_control:
-        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/doc,   roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/,      roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/, roles: ROLE_ADMIN }
+        - { path: ^/login$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/doc,    roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/,       roles: ROLE_USER }

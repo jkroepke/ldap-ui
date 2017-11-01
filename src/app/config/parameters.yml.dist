@@ -2,13 +2,8 @@
 # Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
 # https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
-    database_host: 127.0.0.1
-    database_port: ~
-    database_name: symfony
-    database_user: root
-    database_password: ~
-    # You should uncomment this if you want to use pdo_sqlite
-    #database_path: '%kernel.project_dir%/var/data/data.sqlite'
+    # Locale
+    env(LDAPUI_LOCALE): en
 
     mailer_transport: smtp
     mailer_host: 127.0.0.1
@@ -16,11 +11,7 @@ parameters:
     mailer_password: ~
 
     # A secret key that's used to generate certain security-related tokens
-    secret: ThisTokenIsNotSoSecretChangeIt
+    env(LDAPUI_APP_SECRET): ThisTokenIsNotSoSecretChangeIt
 
     # nelmio cors
-    cors_allow_origin: 'http://localhost'
-
-    # nelmio api docs
-    api_name: 'LDAPUi'
-    api_description: 'The full description of your API'
+    env(LDAPUI_CORS_ORIGIN): 'http://localhost'

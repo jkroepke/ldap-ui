@@ -13,11 +13,12 @@ class AppKernel extends Kernel
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new LdapUiBundle\LdapUiBundle(),
 
+            new Nelmio\SecurityBundle\NelmioSecurityBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new LdapTools\Bundle\LdapToolsBundle\LdapToolsBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
