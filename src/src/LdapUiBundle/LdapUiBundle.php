@@ -14,6 +14,7 @@ namespace LdapUiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use LdapUiBundle\DependencyInjection\LdapUiExtension;
 
 class LdapUiBundle extends Bundle
 {
@@ -23,6 +24,11 @@ class LdapUiBundle extends Bundle
     public function getParent()
     {
         return 'LdapToolsBundle';
+    }
+
+    public function getContainerExtension()
+    {
+        return new LdapUiExtension();
     }
 
     /**
