@@ -1,41 +1,44 @@
-# Project language
 language: php
 
-# Start mysql service
-services:
-  - mysql
+php:
+  - 7.0
+  - 7.1
 
-# Cache composer packages so "composer install" is faster
+sudo: false
+
 cache:
   directories:
     - $HOME/.composer/cache/files
 
-# Settings version PHP
-php:
-   - 7.0
-   - 7.1
+matrix:
+  fast_finish: true
+  include:
+    - php: 7.0
+      env: SYMFONY_VERSION='3.3'
+    - php: 7.1
+      env: SYMFONY_VERSION='3.3'
+    - php: 7.1
+      env: SYMFONY_VERSION='~4.0'
+  allow_failures:
+    - php: 7.1
+      env: SYMFONY_VERSION='~4.0'
 
-# Define an environment variable
-env:
-  - SYMFONY_VERSION="3.2.*" DB=mysql
 
-# Update composer
-before-install:
+before_install:
+  - echo "extension=ldap.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
   - composer self-update
 
-# Install composer dependencies,
-# Create database, schema and fixtures
-install:
-  - composer install
-  - cp app/config/parameters.yml.dist app/config/parameters.yml
-  - php bin/console doctrine:database:create --env=test
-  - php bin/console doctrine:schema:create --env=test
-  - php bin/console doctrine:fixtures:load -n --env=test
+before_script:
+  - if [ "$SYMFONY_VERSION" = "~4.0" ]; then composer config minimum-stability dev; composer config prefer-stable true; fi
+  - if [ "$SYMFONY_VERSION" != "" ]; then composer require --dev --no-update symfony/symfony=$SYMFONY_VERSION; fi
+  - composer update ${COMPOSER_FLAGS} --no-interaction
 
-# Run script
 script:
-  - phpunit
+  - true
 
-# After a build, send email notification with the build results
-notifications:
-  email: false
+after_success:
+  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then php ocular.phar code-coverage:upload --format=php-clover clover; fi
+
+
+

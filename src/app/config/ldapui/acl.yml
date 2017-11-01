@@ -1,0 +1,10 @@
+ldap_ui:
+  hide:
+    objects: []
+    attributes: []
+
+  acls:
+    ROLE_USER:
+      deny:
+        objects: []
+        attributes: []

@@ -1,0 +1,9 @@
+imports:
+  - php
+
+filter:
+  excluded_paths:
+    - src/spec/*
+    - src/components/*
+    - src/Resources/*
+    - src/vendor/*
