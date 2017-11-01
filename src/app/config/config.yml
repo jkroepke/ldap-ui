@@ -77,18 +77,6 @@ nelmio_security:
     clickjacking:
         paths:
             '^/.*': DENY
-    csp:
-        hosts: []
-        content_types: []
-        enforce:
-            level1_fallback: false
-            browser_adaptive:
-                enabled: false
-            report-uri: %router.request_context.base_url%/nelmio/csp/report
-            default-src:
-                - 'none'
-            script-src:
-                - 'self'
     content_type:
         nosniff: true
     xss_protection:
