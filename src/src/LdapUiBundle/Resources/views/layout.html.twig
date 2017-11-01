@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% block head %}{% endblock %}
+    <title>{% block title %}Test Application{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% image '@LdapUiBundle/Resources/public/favicons/apple-touch-icon.png' %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset_url }}">
+    {% endimage %}
+    {% image '@LdapUiBundle/Resources/public/favicons/favicon-32x32.png' %}
+    <link rel="apple-touch-icon" sizes="32x32" href="{{ asset_url }}">
+    {% endimage %}
+    {% image '@LdapUiBundle/Resources/public/favicons/favicon-16x16.png' %}
+    <link rel="apple-touch-icon" sizes="16x16" href="{{ asset_url }}">
+    {% endimage %}
+    {% image '@LdapUiBundle/Resources/public/favicons/favicon-256x256.png' %}
+    <link rel="icon" type="image/png" sizes="256x256" href="{{ asset_url }}">
+    {% endimage %}
+    {% stylesheets '@LdapUiBundle/Resources/public/favicons/manifest.json' filter="cssrewrite" output="manifest.json" %}
+    <link rel="manifest" href="{{ asset_url }}">
+    {% endstylesheets %}
+    {% image '@LdapUiBundle/Resources/public/favicons/safari-pinned-tab.svg' %}
+    <link rel="mask-icon" href="{{ asset_url }}" color="#5bbad5">
+    {% endimage %}
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    {% stylesheets filter="cssrewrite" output="css/app.css"
+    'css/bootstrap.css'
+    'bundles/luftgebuff/css/main.css'
+    'bundles/luftgebuff/css/custom.css'
+    'bundles/luftgebuff/css/responsive.css'
+    'bundles/luftgebuff/css/animate.css'
+    %}
+    <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+    {% endstylesheets %}
+    {% block stylesheets %}{% endblock %}
+
+
+    {% javascripts filter="?jsqueeze" output="js/bootstrap.min.js"
+    'js/jquery.js'
+    'js/bootstrap.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {% block javascripts %}{% endblock %}
+    {% javascripts filter="?jsqueeze" output="js/app.min.js"
+    '@LdapUiBundle/Resources/public/js/common.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+</head>
+<body>
+
+{% include 'LdapUiBundle:Menu:topnav.html.twig' %}
+
+<div class="container">
+    {% block body %}{% endblock %}
+</div>
+
+</body>
+</html>
