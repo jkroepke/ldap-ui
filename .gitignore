@@ -70,3 +70,10 @@ composer.phar
 
 # Ignore files from composer
 components/
+
+# Ingore files from assetic
+src/web/vendor/
+src/web/css/
+src/web/images/
+src/web/js/
+src/web/*.json
