@@ -28,8 +28,8 @@ class LoadUserListener
         $ldapObject = $event->getLdapObject();
 
         // Do something with the user/username/domain/LDAP attributes before it is authenticated...
-        foreach($ldapObject->toArray() as $attribute => $value) {
-            # ...
-        }
+        // foreach($ldapObject->toArray() as $attribute => $value) {
+        //     # ...
+        // }
     }
 }

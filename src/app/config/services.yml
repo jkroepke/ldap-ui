@@ -25,3 +25,8 @@ services:
         tags:
             - { name: kernel.event_listener, event: ldap_tools_bundle.load_user.before, method: beforeLoadUser }
             - { name: kernel.event_listener, event: ldap_tools_bundle.load_user.after, method: afterLoadUser }
+    object_voter:
+        class: LdapUiBundle\Security\ObjectVoter
+        autowire: true
+        tags:
+            - { name: security.voter }
