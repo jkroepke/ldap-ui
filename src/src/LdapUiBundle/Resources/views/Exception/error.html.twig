@@ -1,0 +1,25 @@
+{% extends 'LdapUiBundle::layout.html.twig' %}
+
+{% block title %}{{ 'An Error Occurred' | trans('error') }}: {{ status_text }}{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="loginError card rounded-0 text-white bg-danger">
+                        <div class="card-header">
+                            <h3 class="mb-0">{{ 'Oops! An Error Occurred' | trans('error') }}</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><b>The server returned a "{{ status_code }} {{ status_text }}".</b></p>
+                            <p>
+                                Something is broken. Please let us know what you were doing when this error occurred.
+                                We will fix it as soon as possible. Sorry for any inconvenience caused.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

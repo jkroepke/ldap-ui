@@ -22,7 +22,7 @@ class LdapUiBundle extends Bundle
      */
     public function getParent()
     {
-        return 'LdapToolsBundle';
+        return 'TwigBundle';
     }
 
     /**
