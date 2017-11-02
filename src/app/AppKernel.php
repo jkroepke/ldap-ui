@@ -20,10 +20,6 @@ class AppKernel extends Kernel
             new Nelmio\SecurityBundle\NelmioSecurityBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new LdapTools\Bundle\LdapToolsBundle\LdapToolsBundle(),
-            new FOS\RestBundle\FOSRestBundle(),
-            new Nelmio\CorsBundle\NelmioCorsBundle(),
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

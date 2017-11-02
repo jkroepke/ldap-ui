@@ -35,17 +35,7 @@
       <path value="$PROJECT_DIR$/src/vendor/psr/log" />
       <path value="$PROJECT_DIR$/src/vendor/psr/link" />
       <path value="$PROJECT_DIR$/src/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/src/vendor/jms/metadata" />
-      <path value="$PROJECT_DIR$/src/vendor/jms/serializer-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/jms/serializer" />
-      <path value="$PROJECT_DIR$/src/vendor/jms/parser-lib" />
-      <path value="$PROJECT_DIR$/src/vendor/nelmio/cors-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/nelmio/api-doc-bundle" />
-      <path value="$PROJECT_DIR$/src/vendor/michelf/php-markdown" />
-      <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
-      <path value="$PROJECT_DIR$/src/vendor/willdurand/negotiation" />
-      <path value="$PROJECT_DIR$/src/vendor/phpcollection/phpcollection" />
       <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/src/vendor/ldaptools/ldaptools" />
       <path value="$PROJECT_DIR$/src/vendor/chadsikorra/php-simple-enum" />
@@ -64,7 +54,6 @@
       <path value="$PROJECT_DIR$/src/vendor/leafo/scssphp" />
       <path value="$PROJECT_DIR$/src/vendor/nelmio/security-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/ua-parser/uap-php" />
-      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/knplabs/knp-menu-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/knplabs/knp-menu" />
