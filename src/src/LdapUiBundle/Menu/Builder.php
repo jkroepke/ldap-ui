@@ -29,4 +29,18 @@ class Builder implements ContainerAwareInterface
 
         return $menu;
     }
+
+    public function guestMenu(FactoryInterface $factory, array $options)
+    {
+        $menu = $factory->createItem('root');
+        $menu->setChildrenAttribute('class', 'navbar-nav mr-auto');
+        $menu->addChild('Login', ['route' => 'login']);
+
+        foreach ($menu as $child) {
+            $child->setLinkAttribute('class', 'nav-link')
+                ->setAttribute('class', 'nav-item');
+        }
+
+        return $menu;
+    }
 }
