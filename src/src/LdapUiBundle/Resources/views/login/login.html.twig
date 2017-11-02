@@ -2,22 +2,37 @@
 
 {% block title %}{{ 'Login' | trans }}{% endblock %}
 {% block body %}
+    {% if error %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="loginError card rounded-0 text-white bg-warning">
+                            <div class="card-header">
+                                <h3 class="mb-0">{{ 'Error' | trans }}</h3>
+                            </div>
+                            <div class="card-body">
+                                {{ error.messageKey|trans(error.messageData, 'security') }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
     <div class="row">
         <div class="col-md-12">
-            <h2 class="text-center text-white mb-4">Bootstrap 4 Login Form</h2>
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <span class="anchor" id="formLogin"></span>
-
-                    <!-- form card login -->
                     <div class="card rounded-0">
                         <div class="card-header">
-                            <h3 class="mb-0">Login</h3>
+                            <h3 class="mb-0">{{ 'Login' | trans }}</h3>
                         </div>
                         <div class="card-body">
                             <form class="form" role="form" action="{{ path('login') }}" method="post" id="formLogin">
                                 <div class="form-group">
-                                    <label for="uname1">Domain</label>
+                                    <label for="uname1">{{ 'Domain' | trans }}</label>
                                     <select id="_ldap_domain" name="_ldap_domain" class="form-control form-control-lg rounded-0">
                                     {% for domain, label in availableDomains %}
                                         <option value="{{ domain }}">{{ domain }}</option>
@@ -25,11 +40,11 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="uname1">Username</label>
-                                    <input type="text" id="username" name="_username" class="form-control form-control-lg rounded-0" required="">
+                                    <label for="uname1">{{ 'Username' | trans }}</label>
+                                    <input type="text" id="username" name="_username" class="form-control form-control-lg rounded-0" required="" value="{{ lastUsername }}">
                                 </div>
                                 <div class="form-group">
-                                    <label>Password</label>
+                                    <label>{{ 'Password' | trans }}</label>
                                     <input type="password" id="password" name="_password" class="form-control form-control-lg rounded-0" required="" autocomplete="new-password">
                                 </div>
                                 {# See: https://github.com/ldaptools/ldaptools-bundle/issues/21
@@ -41,20 +56,20 @@
                                     </label>
                                 </div>
                                 #}
-                                <button type="submit" class="btn btn-success btn-lg float-right">Login</button>
+                                <button type="submit" class="btn btn-success btn-lg float-right">{{ 'Login' | trans }}</button>
                             </form>
                         </div>
-                        <!--/card-block-->
                     </div>
-                    <!-- /form card login -->
-
                 </div>
-
-
             </div>
-            <!--/row-->
-
         </div>
-        <!--/col-->
     </div>
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter="?scssphp,cssrewrite" output="css/login.css"
+    'bundles/ldapui/css/login.css'
+    %}
+    <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+    {% endstylesheets %}
 {% endblock %}
