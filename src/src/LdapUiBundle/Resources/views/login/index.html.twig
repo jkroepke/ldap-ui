@@ -15,7 +15,7 @@
                             <h3 class="mb-0">Login</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form" role="form" autocomplete="off" id="formLogin">
+                            <form class="form" role="form" action="{{ path('login') }}" method="post" id="formLogin">
                                 <div class="form-group">
                                     <label for="uname1">Domain</label>
                                     <select id="_ldap_domain" name="_ldap_domain" class="form-control form-control-lg rounded-0">
@@ -41,7 +41,7 @@
                                     </label>
                                 </div>
                                 #}
-                                <button type="button" class="btn btn-success btn-lg float-right">Login</button>
+                                <button type="submit" class="btn btn-success btn-lg float-right">Login</button>
                             </form>
                         </div>
                         <!--/card-block-->
