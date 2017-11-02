@@ -31,6 +31,7 @@
                         </div>
                         <div class="card-body">
                             <form class="form" role="form" action="{{ path('login') }}" method="post" id="formLogin">
+                                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
                                 <div class="form-group">
                                     <label for="uname1">{{ 'Domain' | trans }}</label>
                                     <select id="_ldap_domain" name="_ldap_domain" class="form-control form-control-lg rounded-0">

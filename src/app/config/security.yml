@@ -25,6 +25,8 @@ security:
             provider: ldap
             pattern: ^/
             logout: ~
+            form_login:
+                csrf_token_generator: security.csrf.token_manager
             guard:
                 authenticators:
                     - ldap_tools.security.ldap_guard_authenticator
