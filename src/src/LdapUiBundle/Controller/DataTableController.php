@@ -3,6 +3,7 @@
 namespace LdapUiBundle\Controller;
 
 use LdapTools\Object\LdapObjectType;
+use LdapTools\Query\LdapQueryBuilder;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -21,7 +22,7 @@ class DataTableController extends Controller
     public function dataTableAction(Request $request)
     {
         $ldapManager = $this->get('ldap_tools.ldap_manager');
-        $baseDn = $request->query->get('baseDn');
+        $baseDn = $request->request->get('baseDn');
         if (empty($baseDn)) {
             $baseDn = $ldapManager->getConnection()->getConfig()->getBaseDn();
         }
@@ -34,13 +35,15 @@ class DataTableController extends Controller
             $attributes[] = $column['data'];
         }
 
+        $lqb = new LdapQueryBuilder();
+
         $objects = $ldapManager->buildLdapQuery()
             ->setScopeOneLevel()
             ->select($attributes)
+            ->where($lqb->filter()->like('objectclass', '*'))
             ->setBaseDn($baseDn)
             ->getLdapQuery()->getResult();
 
-        var_dump($objects);exit;
 
         foreach($objects as $object) {
             $objectReturn = [];
