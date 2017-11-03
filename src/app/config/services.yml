@@ -20,11 +20,6 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    app.event.login_listener:
-        class: LdapUiBundle\Event\LoadUserListener
-        tags:
-            - { name: kernel.event_listener, event: ldap_tools_bundle.load_user.before, method: beforeLoadUser }
-            - { name: kernel.event_listener, event: ldap_tools_bundle.load_user.after, method: afterLoadUser }
     object_voter:
         class: LdapUiBundle\Security\ObjectVoter
         autowire: true
