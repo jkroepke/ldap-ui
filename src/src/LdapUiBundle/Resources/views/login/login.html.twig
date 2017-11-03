@@ -35,28 +35,26 @@
                                 <div class="form-group">
                                     <label for="uname1">{{ 'Domain' | trans }}</label>
                                     <select id="_ldap_domain" name="_ldap_domain" class="form-control form-control-lg rounded-0">
-                                    {% for domain, label in availableDomains %}
-                                        <option value="{{ domain }}">{{ domain }}</option>
-                                    {% endfor %}
+                                        {% for label, domain in availableDomains %}
+                                            <option value="{{ domain }}">{{ label }}</option>
+                                        {% endfor %}
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="uname1">{{ 'Username' | trans }}</label>
+                                    <label for="username">{{ 'Username' | trans }}</label>
                                     <input type="text" id="username" name="_username" class="form-control form-control-lg rounded-0" required="" value="{{ lastUsername }}">
                                 </div>
                                 <div class="form-group">
-                                    <label>{{ 'Password' | trans }}</label>
+                                    <label for="password">{{ 'Password' | trans }}</label>
                                     <input type="password" id="password" name="_password" class="form-control form-control-lg rounded-0" required="" autocomplete="new-password">
                                 </div>
-                                {# See: https://github.com/ldaptools/ldaptools-bundle/issues/21
                                 <div>
                                     <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
+                                        <input type="checkbox" class="custom-control-input" name="_remember_me" id="remember_me">
                                         <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description small">Remember me on this computer</span>
+                                        <span class="custom-control-description small"><label for="remember_me">{{ 'Remember me on this computer' | trans }}</label></span>
                                     </label>
                                 </div>
-                                #}
                                 <button type="submit" class="btn btn-success btn-lg float-right">{{ 'Login' | trans }}</button>
                             </form>
                         </div>

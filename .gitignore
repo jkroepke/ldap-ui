@@ -77,3 +77,7 @@ src/web/css/
 src/web/images/
 src/web/js/
 src/web/*.json
+
+# Ignore
+src/app/Resources/schema/*
+!src/app/Resources/schema/.gitkeep

@@ -47,12 +47,12 @@ ldap_tools:
         cache_type: 'stash'
     security:
         default_role: ROLE_USER
-        refresh_user_attributes: true
-        refresh_user_roles: true
+        refresh_user_attributes: false
+        refresh_user_roles: false
+        guard:
+            remember_me: true
 
 nelmio_security:
-    signed_cookie:
-        names: ['*']
     clickjacking:
         paths:
             '^/.*': DENY

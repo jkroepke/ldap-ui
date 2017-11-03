@@ -20,10 +20,10 @@ class LdapUiBundle extends Bundle
     /**
      * @return string
      */
-    public function getParent()
-    {
-        return 'TwigBundle';
-    }
+#    public function getParent()
+#    {
+#        return 'TwigBundle';
+#    }
 
     /**
      * @param ContainerBuilder $container

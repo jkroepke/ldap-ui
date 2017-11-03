@@ -25,8 +25,15 @@ security:
             provider: ldap
             pattern: ^/
             logout: ~
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 604800 # 1 week in seconds
+                path: /
             form_login:
                 csrf_token_generator: security.csrf.token_manager
+                post_only: true
+                remember_me: true
+                require_previous_session: true
             guard:
                 authenticators:
                     - ldap_tools.security.ldap_guard_authenticator
