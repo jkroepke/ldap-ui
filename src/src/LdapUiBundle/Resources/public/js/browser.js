@@ -45,20 +45,37 @@
                 "data": function ( d ) {
                     return $.extend( {}, d, {
                         'baseDn': $('#jstree').jstree('get_selected')[0]
-                    } );
+                    });
                 }
             },
+            "columnDefs": [
+                { "width": "60px", "searchable": false, "orderable": false, "targets": 3 }
+            ],
             "columns": [
                 { "data": "cn" },
                 { "data": "objectClass" },
-                { "data": "description" }
+                { "data": "description" },
+                { "data": "actions" }
             ],
             "deferRender": true,
-            "processing": true,
+            "processing": false,
             "serverSide": true,
             "paging": false,
             "searching": false,
             "bInfo" : false
+        }).on( 'processing.dt', function ( e, settings, processing ) {
+            if(processing) {
+                $('.panel-right').addClass('loading');
+            } else {
+                $('.panel-right').removeClass('loading');
+            }
+        });
+
+        var table = $('#browser-table').DataTable();
+
+        $('#browser-table tbody').on('dblclick', 'tr', function () {
+            var data = table.row( this ).data();
+            alert( 'You clicked on '+data[0]+'\'s row' );
         });
     })
 })(jQuery);

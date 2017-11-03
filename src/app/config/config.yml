@@ -71,6 +71,7 @@ nelmio_security:
 assetic:
     debug: '%kernel.debug%'
     use_controller: '%kernel.debug%'
+
     filters:
         cssrewrite: ~
         jsqueeze: ~
@@ -157,7 +158,6 @@ assetic:
             output: vendor/datatables/js/datatables.js
         datatables_css:
             inputs:
-                - "%kernel.root_dir%/../vendor/drmonty/datatables/css/jquery.dataTables.css"
                 - "%kernel.root_dir%/../vendor/drmonty/datatables/css/dataTables.bootstrap4.css"
                 - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedcolumns/css/dataTables.fixedColumns.css"
                 - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedcolumns/css/fixedColumns.bootstrap4.css"
