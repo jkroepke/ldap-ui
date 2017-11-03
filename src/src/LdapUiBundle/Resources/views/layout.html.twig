@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="{{ app.request.locale|split('_')[0] }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,9 +30,10 @@
 
     {% block stylesheets %}
     {% stylesheets filter="?scssphp,cssrewrite" output="css/vendor.css"
+    'vendor/bootstrap/css/bootstrap.css'
+    'vendor/fontawesome/css/font-awesome.css'
     'vendor/select2/css/select2.css'
     'vendor/jstree/css/style.css'
-    'vendor/bootstrap/css/bootstrap.css'
     %}
         <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
     {% endstylesheets %}
@@ -47,24 +48,23 @@
     {% javascripts filter="?jsqueeze" output="js/vendor.min.js"
     'vendor/jquery/js/jquery.js'
     'vendor/bootstrap/js/bootstrap.js'
-    'vendor/select2/js/select2.js'
-    'vendor/select2/js/select2-l18n.js'
-    'vendor/jstree/js/jstree.js'
+    'bundles/bazingajstranslation/js/translator.min.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'javascript' }) }}"></script>
+    {% endblock %}
     {% javascripts filter="?jsqueeze" output="js/app.min.js"
     '@LdapUiBundle/Resources/public/js/main.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
-    {% endblock %}
 </head>
 <body>
 
 {% include 'LdapUiBundle:menu:topnav.html.twig' %}
 
-<main role="main" class="container">
+<main role="main" class="{% block containerclass %}container{% endblock %}">
     {% block body %}{% endblock %}
 </main>
 

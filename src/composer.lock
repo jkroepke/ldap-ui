@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d04c66a4da4aca16c1deea1342344fd2",
+    "content-hash": "02a582608a8472da5f72683ef7d07832",
     "packages": [
         {
             "name": "chadsikorra/php-simple-enum",
@@ -431,77 +431,6 @@
             "time": "2017-07-22T08:35:12+00:00"
         },
         {
-            "name": "doctrine/dbal",
-            "version": "v2.5.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/dbal.git",
-                "reference": "729340d8d1eec8f01bff708e12e449a3415af873"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/729340d8d1eec8f01bff708e12e449a3415af873",
-                "reference": "729340d8d1eec8f01bff708e12e449a3415af873",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/common": ">=2.4,<2.8-dev",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*",
-                "symfony/console": "2.*||^3.0"
-            },
-            "suggest": {
-                "symfony/console": "For helpful console commands such as SQL execution and import of files."
-            },
-            "bin": [
-                "bin/doctrine-dbal"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\DBAL\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                }
-            ],
-            "description": "Database Abstraction Layer",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database",
-                "dbal",
-                "persistence",
-                "queryobject"
-            ],
-            "time": "2017-07-22T20:44:48+00:00"
-        },
-        {
             "name": "doctrine/inflector",
             "version": "v1.2.0",
             "source": {
@@ -569,60 +498,6 @@
             "time": "2017-07-22T12:18:28+00:00"
         },
         {
-            "name": "doctrine/instantiator",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3,<8.0-DEV"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1.8",
-                "ext-pdo": "*",
-                "ext-phar": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
-                }
-            ],
-            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
-            "keywords": [
-                "constructor",
-                "instantiate"
-            ],
-            "time": "2015-06-14T21:17:01+00:00"
-        },
-        {
             "name": "doctrine/lexer",
             "version": "v1.0.1",
             "source": {
@@ -677,80 +552,534 @@
             "time": "2014-09-09T13:34:57+00:00"
         },
         {
-            "name": "doctrine/orm",
-            "version": "v2.5.12",
+            "name": "drmonty/datatables",
+            "version": "1.10.16",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "984535cadc609e9eef8c89414aa3568ee97aa79f"
+                "url": "https://github.com/mrohnstock/datatables.git",
+                "reference": "c794fc7df1ef5bdbf730768a20b8872a97c75a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/984535cadc609e9eef8c89414aa3568ee97aa79f",
-                "reference": "984535cadc609e9eef8c89414aa3568ee97aa79f",
+                "url": "https://api.github.com/repos/mrohnstock/datatables/zipball/c794fc7df1ef5bdbf730768a20b8872a97c75a40",
+                "reference": "c794fc7df1ef5bdbf730768a20b8872a97c75a40",
                 "shasum": ""
             },
             "require": {
-                "doctrine/cache": "~1.4",
-                "doctrine/collections": "~1.2",
-                "doctrine/common": ">=2.5-dev,<2.9-dev",
-                "doctrine/dbal": ">=2.5-dev,<2.7-dev",
-                "doctrine/instantiator": "^1.0.1",
-                "ext-pdo": "*",
-                "php": ">=5.4",
-                "symfony/console": "~2.5|~3.0|~4.0"
+                "components/jquery": ">=1.7"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "symfony/yaml": "~2.3|~3.0|~4.0"
-            },
-            "suggest": {
-                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
-            },
-            "bin": [
-                "bin/doctrine",
-                "bin/doctrine.php"
-            ],
-            "type": "library",
+            "type": "component",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\ORM\\": "lib/"
+                "component": {
+                    "scripts": [
+                        "js/jquery.dataTables.js"
+                    ],
+                    "files": [
+                        "css/dataTables.jqueryui.css",
+                        "css/dataTables.material.css",
+                        "css/dataTables.uikit.min.css",
+                        "css/dataTables.bootstrap.css",
+                        "css/dataTables.bootstrap.min.css",
+                        "css/dataTables.semanticui.min.css",
+                        "css/jquery.dataTables_themeroller.css",
+                        "css/dataTables.bootstrap4.css",
+                        "css/dataTables.foundation.css",
+                        "css/dataTables.bootstrap4.min.css",
+                        "css/dataTables.uikit.css",
+                        "css/dataTables.material.min.css",
+                        "css/jquery.dataTables.css",
+                        "css/dataTables.foundation.min.css",
+                        "css/jquery.dataTables.min.css",
+                        "css/dataTables.jqueryui.min.css",
+                        "css/dataTables.semanticui.css",
+                        "images/sort_both.png",
+                        "images/sort_asc_disabled.png",
+                        "images/sort_desc_disabled.png",
+                        "images/sort_desc.png",
+                        "images/sort_asc.png",
+                        "js/dataTables.foundation.min.js",
+                        "js/dataTables.bootstrap4.js",
+                        "js/jquery.dataTables.js",
+                        "js/dataTables.uikit.min.js",
+                        "js/dataTables.jqueryui.min.js",
+                        "js/dataTables.material.min.js",
+                        "js/dataTables.material.js",
+                        "js/jquery.dataTables.min.js",
+                        "js/dataTables.foundation.js",
+                        "js/dataTables.bootstrap.min.js",
+                        "js/dataTables.semanticui.js",
+                        "js/dataTables.semanticui.min.js",
+                        "js/dataTables.bootstrap4.min.js",
+                        "js/dataTables.uikit.js",
+                        "js/dataTables.bootstrap.js",
+                        "js/dataTables.jqueryui.js"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "jquery"
+                        ]
+                    }
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                }
-            ],
-            "description": "Object-Relational-Mapper for PHP",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.",
+            "homepage": "http://www.datatables.net/",
             "keywords": [
-                "database",
-                "orm"
+                "datatable",
+                "datatables",
+                "filter",
+                "grid",
+                "internationalisable",
+                "page",
+                "sort",
+                "table"
             ],
-            "time": "2017-10-23T18:21:04+00:00"
+            "time": "2017-09-04T06:48:41+00:00"
+        },
+        {
+            "name": "drmonty/datatables-fixedcolumns",
+            "version": "3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrohnstock/datatables-fixedcolumns.git",
+                "reference": "6065d000f87309f66b8ff06ac2cc8db5af187cd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrohnstock/datatables-fixedcolumns/zipball/6065d000f87309f66b8ff06ac2cc8db5af187cd1",
+                "reference": "6065d000f87309f66b8ff06ac2cc8db5af187cd1",
+                "shasum": ""
+            },
+            "require": {
+                "components/jquery": ">=1.7"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/dataTables.fixedColumns.js"
+                    ],
+                    "files": [
+                        "css/fixedColumns.jqueryui.min.css",
+                        "css/dataTables.fixedColumns.css",
+                        "css/fixedColumns.semanticui.min.css",
+                        "css/fixedColumns.bootstrap4.min.css",
+                        "css/fixedColumns.bootstrap.css",
+                        "css/fixedColumns.foundation.css",
+                        "css/fixedColumns.jqueryui.css",
+                        "css/fixedColumns.semanticui.css",
+                        "css/dataTables.fixedColumns.min.css",
+                        "css/fixedColumns.bootstrap.min.css",
+                        "css/fixedColumns.bootstrap4.css",
+                        "css/fixedColumns.foundation.min.css",
+                        "js/dataTables.fixedColumns.min.js",
+                        "js/dataTables.fixedColumns.js"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "jquery"
+                        ]
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "FixedColumns Plugin for DataTables",
+            "homepage": "http://www.datatables.net/",
+            "time": "2017-09-13T06:27:58+00:00"
+        },
+        {
+            "name": "drmonty/datatables-fixedheader",
+            "version": "3.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrohnstock/datatables-fixedheader.git",
+                "reference": "c576e3fbac9c3b8bcfec9bdf8ee636811822e7b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrohnstock/datatables-fixedheader/zipball/c576e3fbac9c3b8bcfec9bdf8ee636811822e7b6",
+                "reference": "c576e3fbac9c3b8bcfec9bdf8ee636811822e7b6",
+                "shasum": ""
+            },
+            "require": {
+                "components/jquery": ">=1.7"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/dataTables.fixedHeader.js"
+                    ],
+                    "files": [
+                        "css/dataTables.fixedHeader.css",
+                        "css/fixedHeader.bootstrap4.min.css",
+                        "css/dataTables.fixedHeader.min.css",
+                        "css/fixedHeader.foundation.css",
+                        "css/fixedHeader.bootstrap.css",
+                        "css/fixedHeader.semanticui.css",
+                        "css/fixedHeader.semanticui.min.css",
+                        "css/fixedHeader.foundation.min.css",
+                        "css/fixedHeader.jqueryui.css",
+                        "css/fixedHeader.bootstrap4.css",
+                        "css/fixedHeader.bootstrap.min.css",
+                        "css/fixedHeader.jqueryui.min.css",
+                        "js/dataTables.fixedHeader.js",
+                        "js/dataTables.fixedHeader.min.js"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "jquery"
+                        ]
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "FixedHeader Plugin for DataTables",
+            "homepage": "http://www.datatables.net/",
+            "time": "2017-09-13T06:32:01+00:00"
+        },
+        {
+            "name": "drmonty/datatables-plugins",
+            "version": "1.10.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrohnstock/datatables-plugins.git",
+                "reference": "97ef502c3c9d0467e45d1c96bd57843755f0de07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrohnstock/datatables-plugins/zipball/97ef502c3c9d0467e45d1c96bd57843755f0de07",
+                "reference": "97ef502c3c9d0467e45d1c96bd57843755f0de07",
+                "shasum": ""
+            },
+            "require": {
+                "components/jquery": ">=1.7"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "dataRender/datetime.js",
+                        "dataRender/intl.js",
+                        "dataRender/ellipsis.js",
+                        "dataRender/percentageBars.js",
+                        "integration/foundation/dataTables.foundation.js",
+                        "integration/foundation/dataTables.foundation.min.js",
+                        "integration/bootstrap/1/dataTables.bootstrap.js",
+                        "integration/bootstrap/3/dataTables.bootstrap.js",
+                        "integration/bootstrap/3/dataTables.bootstrap.min.js",
+                        "integration/bootstrap/2/dataTables.bootstrap.js",
+                        "integration/bootstrap/2/dataTables.bootstrap.min.js",
+                        "integration/jqueryui/dataTables.jqueryui.min.js",
+                        "integration/jqueryui/dataTables.jqueryui.js",
+                        "pagination/four_button.js",
+                        "pagination/full_numbers_no_ellipses.js",
+                        "pagination/jPaginator/dataTables.jPaginator.js",
+                        "pagination/input.js",
+                        "pagination/extjs.js",
+                        "pagination/simple_incremental_bootstrap.js",
+                        "pagination/scrolling.js",
+                        "pagination/ellipses.js",
+                        "pagination/select.js",
+                        "pagination/simple_numbers_no_ellipses.js",
+                        "api/processing().js",
+                        "api/fnSetFilteringDelay.js",
+                        "api/fnDataUpdate.js",
+                        "api/fnReloadAjax.js",
+                        "api/sum().js",
+                        "api/fnFakeRowspan.js",
+                        "api/row().show().js",
+                        "api/fnFilterOnReturn.js",
+                        "api/fnGetColumnIndex.js",
+                        "api/page.jumpToData().js",
+                        "api/column().title().js",
+                        "api/fnProcessingIndicator.js",
+                        "api/fnSortNeutral.js",
+                        "api/fnGetColumnData.js",
+                        "api/fnFindCellRowIndexes.js",
+                        "api/fnAddDataAndDisplay.js",
+                        "api/columns().order().js",
+                        "api/fnDisplayRow.js",
+                        "api/fnFilterClear.js",
+                        "api/fnGetHiddenNodes.js",
+                        "api/fnLengthChange.js",
+                        "api/order.neutral().js",
+                        "api/fnGetTds.js",
+                        "api/fnColumnIndexToVisible.js",
+                        "api/average().js",
+                        "api/fnVisibleToColumnIndex.js",
+                        "api/fnMultiFilter.js",
+                        "api/fnGetAdjacentTr.js",
+                        "api/fnFilterAll.js",
+                        "api/fnAddTr.js",
+                        "api/fnStandingRedraw.js",
+                        "api/fnDisplayStart.js",
+                        "api/fnFindCellRowNodes.js",
+                        "api/fnPagingInfo.js",
+                        "api/fnGetTd.js",
+                        "type-detection/file-size.js",
+                        "type-detection/numeric-comma.js",
+                        "type-detection/ip-address.js",
+                        "type-detection/num-html.js",
+                        "type-detection/currency.js",
+                        "type-detection/date-uk.js",
+                        "type-detection/formatted-num.js",
+                        "features/slidingChild/js/sliding-child.js",
+                        "features/conditionalPaging/dataTables.conditionalPaging.js",
+                        "features/searchHighlight/dataTables.searchHighlight.js",
+                        "features/searchHighlight/dataTables.searchHighlight.min.js",
+                        "features/mark.js/datatables.mark.es6.js",
+                        "features/mark.js/datatables.mark.js",
+                        "features/mark.js/datatables.mark.es6.min.js",
+                        "features/mark.js/datatables.mark.min.js",
+                        "features/lengthLinks/dataTables.lengthLinks.min.js",
+                        "features/lengthLinks/dataTables.lengthLinks.js",
+                        "features/searchPane/dataTables.searchPane.min.js",
+                        "features/searchPane/dataTables.searchPane.js",
+                        "features/deepLink/dataTables.deepLink.min.js",
+                        "features/deepLink/dataTables.deepLink.js",
+                        "features/alphabetSearch/dataTables.alphabetSearch.js",
+                        "features/alphabetSearch/dataTables.alphabetSearch.min.js",
+                        "features/scrollResize/dataTables.scrollResize.js",
+                        "features/pageResize/dataTables.pageResize.js",
+                        "features/pageResize/dataTables.pageResize.min.js",
+                        "sorting/turkish-string.js",
+                        "sorting/signed-num.js",
+                        "sorting/any-number.js",
+                        "sorting/anti-the.js",
+                        "sorting/file-size.js",
+                        "sorting/date-euro.js",
+                        "sorting/time.js",
+                        "sorting/natural.js",
+                        "sorting/chinese-string.js",
+                        "sorting/persian.js",
+                        "sorting/brackets-negative.js",
+                        "sorting/nepali-numbers.js",
+                        "sorting/numeric-comma.js",
+                        "sorting/datetime-us.js",
+                        "sorting/enum.js",
+                        "sorting/title-string.js",
+                        "sorting/formatted-numbers.js",
+                        "sorting/custom-data-source/dom-text.js",
+                        "sorting/custom-data-source/dom-checkbox.js",
+                        "sorting/custom-data-source/dom-select.js",
+                        "sorting/diacritics-sort.js",
+                        "sorting/stringMonthYear.js",
+                        "sorting/percent.js",
+                        "sorting/ip-address.js",
+                        "sorting/intl.js",
+                        "sorting/time-elapsed-dhms.js",
+                        "sorting/title-numeric.js",
+                        "sorting/date-dd-MMM-yyyy.js",
+                        "sorting/num-html.js",
+                        "sorting/absolute.js",
+                        "sorting/datetime-moment.js",
+                        "sorting/scientific.js",
+                        "sorting/currency.js",
+                        "sorting/date-eu.js",
+                        "sorting/date-uk.js",
+                        "sorting/monthYear.js",
+                        "sorting/alt-string.js",
+                        "sorting/date-de.js",
+                        "filtering/type-based/phoneNumber.js",
+                        "filtering/type-based/accent-neutralise.js",
+                        "filtering/type-based/html.js",
+                        "filtering/type-based/diacritics-neutralise.js",
+                        "filtering/row-based/range_numbers.js",
+                        "filtering/row-based/range_dates.js",
+                        "filtering/row-based/TableTools.ShowSelectedOnly.js"
+                    ],
+                    "files": [
+                        "integration/foundation/dataTables.foundation.css",
+                        "integration/foundation/images/sort_asc_disabled.png",
+                        "integration/foundation/images/sort_desc_disabled.png",
+                        "integration/foundation/images/sort_both.png",
+                        "integration/foundation/images/sort_desc.png",
+                        "integration/foundation/images/sort_asc.png",
+                        "integration/bootstrap/1/dataTables.bootstrap.css",
+                        "integration/bootstrap/3/dataTables.bootstrap.css",
+                        "integration/bootstrap/images/sort_asc_disabled.png",
+                        "integration/bootstrap/images/sort_desc_disabled.png",
+                        "integration/bootstrap/images/sort_both.png",
+                        "integration/bootstrap/images/sort_desc.png",
+                        "integration/bootstrap/images/sort_asc.png",
+                        "integration/bootstrap/2/dataTables.bootstrap.css",
+                        "integration/jqueryui/dataTables.jqueryui.scss",
+                        "integration/jqueryui/dataTables.jqueryui.css",
+                        "integration/font-awesome/dataTables.fontAwesome.css",
+                        "i18n/Ukrainian.json",
+                        "i18n/Kazakh.json",
+                        "i18n/Armenian.json",
+                        "i18n/English.lang",
+                        "i18n/Ukranian.json",
+                        "i18n/Polish.json",
+                        "i18n/Italian.json",
+                        "i18n/Indonesian-Alternative.json",
+                        "i18n/Norwegian-Bokmal.json",
+                        "i18n/Lithuanian.json",
+                        "i18n/Russian.lang",
+                        "i18n/Dutch.lang",
+                        "i18n/Korean.json",
+                        "i18n/Lithuanian.lang",
+                        "i18n/French.json",
+                        "i18n/Armenian.lang",
+                        "i18n/Basque.lang",
+                        "i18n/Sinhala.json",
+                        "i18n/Thai.lang",
+                        "i18n/Danish.json",
+                        "i18n/Galician.lang",
+                        "i18n/Swedish.json",
+                        "i18n/Persian.json",
+                        "i18n/Welsh.json",
+                        "i18n/Norwegian-Nynorsk.json",
+                        "i18n/Serbian.json",
+                        "i18n/Azerbaijan.lang",
+                        "i18n/Portuguese-Brasil.lang",
+                        "i18n/Afrikaans.lang",
+                        "i18n/Norwegian.lang",
+                        "i18n/Azerbaijan.json",
+                        "i18n/German.lang",
+                        "i18n/Basque.json",
+                        "i18n/Filipino.json",
+                        "i18n/Icelandic.json",
+                        "i18n/Amharic.json",
+                        "i18n/Georgian.lang",
+                        "i18n/Finnish.json",
+                        "i18n/Indonesian-Alternative.lang",
+                        "i18n/Belarusian.json",
+                        "i18n/Danish.lang",
+                        "i18n/Chinese-traditional.lang",
+                        "i18n/Nepali.json",
+                        "i18n/Urdu.json",
+                        "i18n/Amharic.lang",
+                        "i18n/Georgian.json",
+                        "i18n/Dutch.json",
+                        "i18n/Uzbek.lang",
+                        "i18n/Urdu.lang",
+                        "i18n/Japanese.lang",
+                        "i18n/Kyrgyz.json",
+                        "i18n/Swedish.lang",
+                        "i18n/Galician.json",
+                        "i18n/Pashto.lang",
+                        "i18n/Vietnamese.json",
+                        "i18n/Nepali.lang",
+                        "i18n/Finnish.lang",
+                        "i18n/Persian.lang",
+                        "i18n/Icelandic.lang",
+                        "i18n/Spanish.lang",
+                        "i18n/Indonesian.lang",
+                        "i18n/Hungarian.json",
+                        "i18n/Ukrainian.lang",
+                        "i18n/Romanian.json",
+                        "i18n/Catalan.json",
+                        "i18n/Bulgarian.json",
+                        "i18n/Croatian.lang",
+                        "i18n/Czech.json",
+                        "i18n/Thai.json",
+                        "i18n/Estonian.json",
+                        "i18n/Spanish.json",
+                        "i18n/Hindi.lang",
+                        "i18n/Norwegian-Bokmal.lang",
+                        "i18n/Gujarati.lang",
+                        "i18n/telugu.lang",
+                        "i18n/Mongolian.json",
+                        "i18n/Italian.lang",
+                        "i18n/Portuguese-Brasil.json",
+                        "i18n/Pashto.json",
+                        "i18n/English.json",
+                        "i18n/telugu.json",
+                        "i18n/Greek.json",
+                        "i18n/Sinhala.lang",
+                        "i18n/Malay.lang",
+                        "i18n/Croatian.json",
+                        "i18n/Japanese.json",
+                        "i18n/Macedonian.json",
+                        "i18n/Kyrgyz.lang",
+                        "i18n/Bangla.json",
+                        "i18n/Korean.lang",
+                        "i18n/Tamil.lang",
+                        "i18n/Catalan.lang",
+                        "i18n/Turkish.lang",
+                        "i18n/Irish.json",
+                        "i18n/Turkish.json",
+                        "i18n/Swahili.lang",
+                        "i18n/Chinese.lang",
+                        "i18n/Hebrew.json",
+                        "i18n/Albanian.lang",
+                        "i18n/Latvian.json",
+                        "i18n/Chinese-traditional.json",
+                        "i18n/Bulgarian.lang",
+                        "i18n/Filipino.lang",
+                        "i18n/Hungarian.lang",
+                        "i18n/Welsh.lang",
+                        "i18n/Swahili.json",
+                        "i18n/Russian.json",
+                        "i18n/Arabic.json",
+                        "i18n/Uzbek.json",
+                        "i18n/Portuguese.lang",
+                        "i18n/Chinese.json",
+                        "i18n/Latvian.lang",
+                        "i18n/Afrikaans.json",
+                        "i18n/Indonesian.json",
+                        "i18n/Gujarati.json",
+                        "i18n/Norwegian-Nynorsk.lang",
+                        "i18n/Romanian.lang",
+                        "i18n/Ukranian.lang",
+                        "i18n/Malay.json",
+                        "i18n/Czech.lang",
+                        "i18n/Slovenian.json",
+                        "i18n/Slovak.lang",
+                        "i18n/Slovenian.lang",
+                        "i18n/Hebrew.lang",
+                        "i18n/Portuguese.json",
+                        "i18n/Hindi.json",
+                        "i18n/German.json",
+                        "i18n/Norwegian.json",
+                        "i18n/Estonian.lang",
+                        "i18n/Slovak.json",
+                        "i18n/Arabic.lang",
+                        "i18n/French.lang",
+                        "i18n/Tamil.json",
+                        "i18n/Kazakh.lang",
+                        "i18n/Belarusian.lang",
+                        "i18n/Polish.lang",
+                        "i18n/Bangla.lang",
+                        "i18n/Vietnamese.lang",
+                        "i18n/Irish.lang",
+                        "i18n/Greek.lang",
+                        "i18n/Macedonian.lang",
+                        "i18n/Albanian.json",
+                        "i18n/Mongolian.lang",
+                        "i18n/Serbian.lang",
+                        "features/mark.js/datatables.mark.min.css",
+                        "features/mark.js/datatables.mark.css",
+                        "features/lengthLinks/dataTables.lengthLinks.css",
+                        "features/searchPane/dataTables.searchPane.css",
+                        "features/searchPane/dataTables.searchPane.scss",
+                        "features/searchPane/dataTables.searchPane.min.css",
+                        "features/alphabetSearch/dataTables.alphabetSearch.css"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "jquery"
+                        ]
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Plug-ins for DataTables",
+            "homepage": "http://www.datatables.net/",
+            "keywords": [
+                "datatable",
+                "datatables",
+                "filter",
+                "grid",
+                "internationalisable",
+                "page",
+                "sort",
+                "table"
+            ],
+            "time": "2017-09-04T07:05:16+00:00"
         },
         {
             "name": "fig/link-util",
@@ -853,64 +1182,6 @@
                 "icon"
             ],
             "time": "2016-10-24T15:52:54+00:00"
-        },
-        {
-            "name": "friendsofsymfony/jsrouting-bundle",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "2f52d924692647db02bbcb27c159fef03bf000c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/2f52d924692647db02bbcb27c159fef03bf000c9",
-                "reference": "2f52d924692647db02bbcb27c159fef03bf000c9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/console": "~2.0|3.*",
-                "symfony/framework-bundle": "~2.0|3.*",
-                "symfony/serializer": "~2.0|3.*",
-                "willdurand/jsonp-callback-validator": "~1.0"
-            },
-            "require-dev": {
-                "symfony/expression-language": "~2.4|3.*"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FOS\\JsRoutingBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FriendsOfSymfony Community",
-                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
-                },
-                {
-                    "name": "William Durand",
-                    "email": "william.durand1@gmail.com"
-                }
-            ],
-            "description": "A pretty nice way to expose your Symfony2 routing to client applications.",
-            "homepage": "http://friendsofsymfony.github.com",
-            "keywords": [
-                "Js Routing",
-                "javascript",
-                "routing"
-            ],
-            "time": "2015-10-28T15:08:39+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2144,61 +2415,6 @@
             "time": "2017-10-29T18:48:08+00:00"
         },
         {
-            "name": "sg/datatablesbundle",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stwe/DatatablesBundle.git",
-                "reference": "90cc764e1f28b385d2a2c99bc732797dfa6bb931"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stwe/DatatablesBundle/zipball/90cc764e1f28b385d2a2c99bc732797dfa6bb931",
-                "reference": "90cc764e1f28b385d2a2c99bc732797dfa6bb931",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/orm": "^2.5",
-                "friendsofsymfony/jsrouting-bundle": "1.6.0",
-                "php": ">=5.5.9",
-                "symfony/framework-bundle": "~3.0",
-                "symfony/options-resolver": "~3.0",
-                "symfony/property-access": "~3.0"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Sg\\DatatablesBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "stwe"
-                },
-                {
-                    "name": "SgDatatablesBundle contributors",
-                    "homepage": "https://github.com/stwe/DatatablesBundle/graphs/contributors"
-                }
-            ],
-            "description": "Symfony Datatable Bundle For Doctrine2 Entities",
-            "homepage": "https://github.com/stwe/DatatablesBundle",
-            "keywords": [
-                "data-table",
-                "datagrid",
-                "datatable",
-                "datatables",
-                "grid",
-                "pagination",
-                "symfony3",
-                "table"
-            ],
-            "time": "2017-09-04T08:12:56+00:00"
-        },
-        {
             "name": "symfony/assetic-bundle",
             "version": "v2.8.2",
             "source": {
@@ -3106,29 +3322,47 @@
             "time": "2017-04-06T14:23:09+00:00"
         },
         {
-            "name": "willdurand/jsonp-callback-validator",
-            "version": "v1.1.0",
+            "name": "willdurand/js-translation-bundle",
+            "version": "2.6.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/willdurand/JsonpCallbackValidator.git",
-                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909"
+                "url": "https://github.com/willdurand/BazingaJsTranslationBundle.git",
+                "reference": "d9cb848fc66b502658994cf86e63ed3d940e1095"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/1a7d388bb521959e612ef50c5c7b1691b097e909",
-                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909",
+                "url": "https://api.github.com/repos/willdurand/BazingaJsTranslationBundle/zipball/d9cb848fc66b502658994cf86e63ed3d940e1095",
+                "reference": "d9cb848fc66b502658994cf86e63ed3d940e1095",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "symfony/console": "~2.7|~3.1",
+                "symfony/finder": "~2.7|~3.1",
+                "symfony/framework-bundle": "~2.7|~3.1",
+                "symfony/intl": "~2.7|~3.1",
+                "symfony/templating": "~2.7|~3.1",
+                "symfony/translation": "~2.7|~3.1"
+            },
+            "replace": {
+                "willdurand/expose-translation-bundle": "2.5.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "^4.8|~5.7",
+                "symfony/asset": "~2.7|~3.1",
+                "symfony/browser-kit": "~2.7|~3.1",
+                "symfony/phpunit-bridge": "~2.7|~3.1",
+                "symfony/twig-bundle": "~2.7|~3.1",
+                "symfony/yaml": "~2.7|~3.1"
             },
-            "type": "library",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "JsonpCallbackValidator": "src/"
+                "psr-4": {
+                    "Bazinga\\Bundle\\JsTranslationBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3138,12 +3372,16 @@
             "authors": [
                 {
                     "name": "William Durand",
-                    "email": "william.durand1@gmail.com",
-                    "homepage": "http://www.willdurand.fr"
+                    "email": "will+git@drnd.me"
                 }
             ],
-            "description": "JSONP callback validator.",
-            "time": "2014-01-20T22:35:06+00:00"
+            "description": "A pretty nice way to expose your translation messages to your JavaScript.",
+            "keywords": [
+                "javascript",
+                "symfony",
+                "translation"
+            ],
+            "time": "2017-05-17T21:16:31+00:00"
         }
     ],
     "packages-dev": [

@@ -16,7 +16,7 @@ class Builder implements ContainerAwareInterface
     {
         $menu = $factory->createItem('root');
         $menu->setChildrenAttribute('class', 'navbar-nav mr-auto');
-        $menu->addChild('Browser', ['route' => 'index']);
+        $menu->addChild('Browser', ['route' => 'browser']);
 
 
         // Styling for Bootstrap 4

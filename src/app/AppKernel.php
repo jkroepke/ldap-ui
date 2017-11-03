@@ -16,6 +16,7 @@ class AppKernel extends Kernel
 
             new LdapUiBundle\LdapUiBundle(),
 
+            new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Nelmio\SecurityBundle\NelmioSecurityBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),

@@ -12,14 +12,14 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedheader" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
@@ -43,7 +43,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -59,7 +58,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-      <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -73,14 +72,14 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/cache" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/dbal" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedheader" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
-          <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
@@ -104,7 +103,6 @@
           <root url="file://$MODULE_DIR$/src/vendor/sensio/framework-extra-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
-          <root url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -120,7 +118,7 @@
           <root url="file://$MODULE_DIR$/src/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-          <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -131,14 +129,14 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/cache" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/dbal" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
-          <root url="file://$MODULE_DIR$/src/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedheader" />
+          <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
-          <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
@@ -162,7 +160,6 @@
           <root url="file://$MODULE_DIR$/src/vendor/sensio/framework-extra-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/sensiolabs/security-checker" />
-          <root url="file://$MODULE_DIR$/src/vendor/sg/datatablesbundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/symfony/phpunit-bridge" />
@@ -178,7 +175,7 @@
           <root url="file://$MODULE_DIR$/src/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
-          <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
         </SOURCES>
       </library>
     </orderEntry>

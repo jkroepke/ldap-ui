@@ -51,6 +51,7 @@ ldap_tools:
         refresh_user_roles: false
         guard:
             remember_me: true
+            default_target_path: /browser
 
 nelmio_security:
     clickjacking:
@@ -84,11 +85,8 @@ assetic:
         select2_js:
             inputs:
                 - "%kernel.root_dir%/../vendor/select2/select2/dist/js/select2.full.js"
-            output: vendor/select2/js/select2.js
-        select2_js_l18n:
-            inputs:
                 - "%kernel.root_dir%/../vendor/select2/select2/dist/js/i18n/%env(LDAPUI_LOCALE)%.js"
-            output: vendor/select2/js/select2-l18n.js
+            output: vendor/select2/js/select2.js
         select2_css:
             inputs:
                 - "%kernel.root_dir%/../vendor/select2/select2/dist/css/select2.css"
@@ -102,6 +100,18 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/vakata/jstree/dist/themes/default/style.css"
             output: vendor/jstree/css/style.css
+        jstree_throbber:
+            inputs:
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/themes/default/throbber.gif"
+            output: vendor/jstree/css/throbber.gif
+        jstree_32px:
+            inputs:
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/themes/default/32px.png"
+            output: vendor/jstree/css/32px.png
+        jstree_40px:
+            inputs:
+                - "%kernel.root_dir%/../vendor/vakata/jstree/dist/themes/default/40px.png"
+            output: vendor/jstree/css/40px.png
 
         bootstrap_js:
             inputs:
@@ -111,6 +121,11 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css"
             output: vendor/bootstrap/css/bootstrap.css
+
+        fontawesome_css:
+            inputs:
+                - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/css/font-awesome.css"
+            output: vendor/fontawesome/css/font-awesome.css
 
         fontawesome_fonts_woff2:
             inputs:
@@ -132,3 +147,40 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.eot"
             output: vendor/fontawesome/fonts/fontawesome-webfont.eot
+
+        datatables_js:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/js/jquery.dataTables.js"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/js/dataTables.bootstrap4.js"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedcolumns/js/dataTables.fixedColumns.js"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedheader/js/dataTables.fixedHeader.js"
+            output: vendor/datatables/js/datatables.js
+        datatables_css:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/css/jquery.dataTables.css"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/css/dataTables.bootstrap4.css"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedcolumns/css/dataTables.fixedColumns.css"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedcolumns/css/fixedColumns.bootstrap4.css"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedheader/css/dataTables.fixedHeader.css"
+                - "%kernel.root_dir%/../vendor/drmonty/datatables-fixedheader/css/fixedHeader.bootstrap4.css"
+            output: vendor/datatables/css/datatables.css
+        datatables_images_sort_both:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/images/sort_both.png"
+            output: vendor/datatables/images/sort_both.png
+        datatables_images_sort_asc:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/images/sort_asc.png"
+            output: vendor/datatables/images/sort_asc.png
+        datatables_images_sort_desc:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/images/sort_desc.png"
+            output: vendor/datatables/images/sort_desc.png
+        datatables_images_sort_asc_disabled:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/images/sort_asc_disabled.png"
+            output: vendor/datatables/images/sort_asc_disabled.png
+        datatables_images_sort_desc_disabled:
+            inputs:
+                - "%kernel.root_dir%/../vendor/drmonty/datatables/images/sort_desc_disabled.png"
+            output: vendor/datatables/images/sort_desc_disabled.png
