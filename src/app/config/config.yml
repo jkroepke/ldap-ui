@@ -53,21 +53,6 @@ ldap_tools:
             remember_me: true
             default_target_path: /browser
 
-nelmio_security:
-    clickjacking:
-        paths:
-            '^/.*': DENY
-    content_type:
-        nosniff: true
-    xss_protection:
-        enabled: true
-        mode_block: true
-    referrer_policy:
-        enabled: true
-        policies:
-            - 'no-referrer'
-            - 'strict-origin-when-cross-origin'
-
 assetic:
     debug: '%kernel.debug%'
     use_controller: '%kernel.debug%'

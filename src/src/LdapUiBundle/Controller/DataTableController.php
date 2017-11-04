@@ -44,13 +44,12 @@ class DataTableController extends Controller
             ->setBaseDn($baseDn)
             ->getLdapQuery()->getResult();
 
-
         foreach($objects as $object) {
             $objectReturn = [];
             foreach($requestedColumns as $column) {
                 $field = $column['data'];
 
-                if ($field == 'actions') {
+                if ($field === 'actions') {
                     $objectReturn[$field] = $this->getActions($object);
                 } else {
                     $method = 'get'.ucfirst($field);
@@ -87,7 +86,7 @@ class DataTableController extends Controller
     private function getActions($object) {
         return join(' ', [
             '<a href="#" class="edit" data-dn="'.$object->getDn().'"><i class="fa fa-pencil" aria-hidden="true"></i></a>',
-            '<a href="#" class="edit" data-dn="'.$object->getDn().'"><i class="fa fa-trash" aria-hidden="true"></i></a>'
+            '<a href="#" class="delete" data-dn="'.$object->getDn().'"><i class="fa fa-trash" aria-hidden="true"></i></a>'
         ]);
     }
 }

@@ -56,6 +56,17 @@
       <path value="$PROJECT_DIR$/src/vendor/drmonty/datatables-plugins" />
       <path value="$PROJECT_DIR$/src/vendor/drmonty/datatables" />
       <path value="$PROJECT_DIR$/src/vendor/willdurand/js-translation-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/src/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/src/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/src/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

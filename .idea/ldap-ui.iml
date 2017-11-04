@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
@@ -20,7 +21,12 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
@@ -28,9 +34,12 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/leafo/scssphp" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/nelmio/cors-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/nelmio/security-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/patchwork/jsqueeze" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpcollection/phpcollection" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/link" />
@@ -59,6 +68,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -73,6 +84,7 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
@@ -80,7 +92,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
+          <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
@@ -88,9 +105,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/src/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/src/vendor/nelmio/cors-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/nelmio/security-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/src/vendor/patchwork/jsqueeze" />
+          <root url="file://$MODULE_DIR$/src/vendor/phpcollection/phpcollection" />
+          <root url="file://$MODULE_DIR$/src/vendor/phpoption/phpoption" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/cache" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/link" />
@@ -119,6 +139,8 @@
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -130,6 +152,7 @@
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/common" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/src/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables" />
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-fixedcolumns" />
@@ -137,7 +160,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/drmonty/datatables-plugins" />
           <root url="file://$MODULE_DIR$/src/vendor/fig/link-util" />
           <root url="file://$MODULE_DIR$/src/vendor/fortawesome/font-awesome" />
+          <root url="file://$MODULE_DIR$/src/vendor/friendsofsymfony/rest-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/metadata" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/parser-lib" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/serializer" />
+          <root url="file://$MODULE_DIR$/src/vendor/jms/serializer-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu" />
           <root url="file://$MODULE_DIR$/src/vendor/knplabs/knp-menu-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/kriswallsmith/assetic" />
@@ -145,9 +173,12 @@
           <root url="file://$MODULE_DIR$/src/vendor/ldaptools/ldaptools-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/src/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/src/vendor/nelmio/cors-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/nelmio/security-bundle" />
           <root url="file://$MODULE_DIR$/src/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/src/vendor/patchwork/jsqueeze" />
+          <root url="file://$MODULE_DIR$/src/vendor/phpcollection/phpcollection" />
+          <root url="file://$MODULE_DIR$/src/vendor/phpoption/phpoption" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/cache" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/src/vendor/psr/link" />
@@ -176,6 +207,8 @@
           <root url="file://$MODULE_DIR$/src/vendor/ua-parser/uap-php" />
           <root url="file://$MODULE_DIR$/src/vendor/vakata/jstree" />
           <root url="file://$MODULE_DIR$/src/vendor/willdurand/js-translation-bundle" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/jsonp-callback-validator" />
+          <root url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
         </SOURCES>
       </library>
     </orderEntry>
